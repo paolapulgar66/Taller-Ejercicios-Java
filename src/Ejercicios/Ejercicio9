@@ -1,0 +1,25 @@
+using System;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio9 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("9) Diferencia de Fracciones");
+            string f1 = IO.ReadString("Primera fracción (a/b): ");
+            string f2 = IO.ReadString("Segunda fracción (a/b): ");
+            try
+            {
+                var A = Fraction.Parse(f1);
+                var B = Fraction.Parse(f2);
+                Console.WriteLine((A - B).ToString());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Entrada inválida: {ex.Message}");
+            }
+        }
+    }
+}

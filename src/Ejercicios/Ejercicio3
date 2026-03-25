@@ -1,0 +1,17 @@
+using System;
+using System.Globalization;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio3 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("ingrese un numero si es positivo obtendra  su raiz de lo contrario su cuadrado");
+            int n = IO.ReadInt("Ingrese por favor un numero: ");
+            if (n > 0) Console.WriteLine(Math.Sqrt(n).ToString("0.####", CultureInfo.InvariantCulture));
+            else Console.WriteLine(((long)n * n));
+        }
+    }
+}

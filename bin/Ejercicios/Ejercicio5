@@ -1,0 +1,16 @@
+using System;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio5 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("5) Día Laboral");
+            int n = IO.ReadInt("Número (1-7): ");
+            string[] dias = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes" };
+            Console.WriteLine(n >= 1 && n <= 5 ? dias[n - 1] : "Número fuera del rango laboral.");
+        }
+    }
+}

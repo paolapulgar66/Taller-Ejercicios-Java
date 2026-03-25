@@ -1,0 +1,17 @@
+sing System;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio1 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("Solicitar un número y eleva este número al cuadrado");
+            int n = IO.ReadInt("Ingresa un número: ");
+            if (n > 0) Console.WriteLine(((long)n * n));
+            else if (n == 0) Console.WriteLine(0);
+            else Console.WriteLine("El número ingresado es negativo.");
+        }
+    }
+}

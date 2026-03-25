@@ -1,0 +1,15 @@
+using System;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio10 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("10) Longitud de Cadena");
+            string w = IO.ReadString("Palabra: ");
+            Console.WriteLine(w.Length);
+        }
+    }
+}

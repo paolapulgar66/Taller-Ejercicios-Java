@@ -1,0 +1,16 @@
+using System;
+using System.Globalization;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio4 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("calcular el radio de un circulo y su perimetro");
+            double r = IO.ReadDouble("Ingrese por favor el valor del radio ");
+            Console.WriteLine((2 * Math.PI * r).ToString("0.00", CultureInfo.InvariantCulture));
+        }
+    }
+}

@@ -1,0 +1,17 @@
+using System;
+using System.Linq;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio12 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("12) Menor de Cinco");
+            int[] a = new int[5];
+            for (int i = 0; i < 5; i++) a[i] = IO.ReadInt($"Número {i + 1}: ");
+            Console.WriteLine(a.Min());
+        }
+    }
+}

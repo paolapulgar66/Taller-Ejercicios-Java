@@ -1,0 +1,16 @@
+using System;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio7 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("7) Residuo de División");
+            int a = IO.ReadInt("Dividendo: ");
+            int b = IO.ReadInt("Divisor: ");
+            Console.WriteLine(b == 0 ? "El divisor no puede ser cero." : $"{a % b}");
+        }
+    }
+}

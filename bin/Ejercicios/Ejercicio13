@@ -1,0 +1,17 @@
+using System;
+using System.Linq;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio13 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("13) Contador de Vocales");
+            string s = IO.ReadString("Palabra: ");
+            string vowels = "aeiouáéíóúAEIOUÁÉÍÓÚ";
+            Console.WriteLine(s.Count(c => vowels.Contains(c)));
+        }
+    }
+}

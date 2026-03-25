@@ -1,0 +1,17 @@
+using System;
+using System.Globalization;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio6 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("6) Calculadora de Impuestos");
+            double s = IO.ReadDouble("Salario anual: ");
+            if (s > 12000) Console.WriteLine(((s - 12000) * 0.15).ToString("0.##", CultureInfo.InvariantCulture));
+            else Console.WriteLine("No debe impuestos.");
+        }
+    }
+}

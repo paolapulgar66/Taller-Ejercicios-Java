@@ -1,0 +1,18 @@
+using System;
+using System.Globalization;
+using System.Linq;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio11 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("11) Promedio de Cuatro");
+            double[] a = new double[4];
+            for (int i = 0; i < 4; i++) a[i] = IO.ReadDouble($"Número {i + 1}: ");
+            Console.WriteLine(a.Average().ToString("0.####", CultureInfo.InvariantCulture));
+        }
+    }
+}

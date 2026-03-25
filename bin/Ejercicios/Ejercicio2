@@ -1,0 +1,16 @@
+using System;
+using Optativa.Shared;
+
+namespace Optativa.Ejercicios
+{
+    public class Ejercicio2 : IExercise
+    {
+        public void Run()
+        {
+            Console.WriteLine("Calcular de dos numeros si el 1ro es > calcule su doble si no el triple del segundo");
+            int a = IO.ReadInt("Ingrese por favor su primer numero:");
+            int b = IO.ReadInt("Ingrese por favor su segundo numero:");
+            Console.WriteLine(a >= b ? 2 * a : 3 * b);
+        }
+    }
+}
